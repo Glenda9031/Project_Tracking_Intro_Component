@@ -83,6 +83,71 @@ li {
     background-image: url('../images/icon-close.svg');
 }
 
+.header .logo {
+    width: var(--logo-size);
+}
+
+.header .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    min-height: 0;
+    opacity: 0;
+    z-index: 10;
+    background-color: var(--White);
+}
+
+.header .nav a {
+    font-size: .875rem;
+}
+
+.header .nav.show {
+    display: flex;
+    animation: showMenu .5s ease forwards;
+}
+
+.header .nav .separator {
+    width: 90%;
+    height: .0313rem;
+    background-color: var(--Grayish-Blue);
+}
+
+@keyframes showMenu {
+    0% {
+        opacity: 1;
+        min-height: 14.375rem;
+    }
+}
+
+.header .nav a {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--Very-Dark-Blue);
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+.header .nav a.login {
+    color: var(--Grayish-Blue);
+}
+
+/* Main */
+main {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: clamp(3.125rem + 1vw, 4.6875rem);
+}
+
+
+
 
 
 
