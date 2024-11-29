@@ -283,10 +283,55 @@ main .hero .cta p {
         left: revert;
         right: -4.0625rem;
       }
-
-
 }
 
+@media (min-width: 56.25rem) {
+    main .img-container .hero-img {
+        right: -11.5625rem;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .header .nav,
+    .header .nav.show {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2.6875rem;
+        position: revert;
+        width: revert;
+        min-height: revert;
+        opacity: revert;
+        flex-direction: revert;
+        background-color: revert;
+    }
+
+    .header .nav a {
+        letter-spacing: .0344rem;
+    }
+
+    .header .nav . separator {
+        width: .3125rem;
+        height: .3125rem;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 68.75rem) {
+    main .img-container .hero-img {
+        height: 25.125rem;
+        right: -14rem;
+    }   
+}
+
+@media (min-width: 87.5rem) {
+    :root {
+        --inner-inline-margin: 164px;
+      }
+
+      
+}
 
 
 
